@@ -61,19 +61,7 @@ html {
 	background-color: white;
 }
 
-@media #{$small} {
-	#wrapper {
-		max-width: 960px;
-		margin: 60px auto;
-		@include border-radius(5px);
-	}
 
-	table {
-	//width: 80%;
-	//margin-left: 10%;
-	//margin-right: 10%;
-	}
-}
 
 footer {
 	background-color: #555;
@@ -130,13 +118,13 @@ h1
 }
 
 h2
-	{
-		color: #0F4FA8;
-	}
-	h3
-	{
-		color: #4380D3;
-	}
+{
+	color: #0F4FA8;
+}
+h3
+{
+	color: #4380D3;
+}
 strong{
 	color: #4380D3;
 	}
@@ -163,17 +151,39 @@ p a:not(.button){
 }
 
 table {
-	//width: 100%;
-	//margin-left: 15%;
-	//margin-right: 15%;
 	margin: auto;
 	width: auto;
 }
 
-//tr {
-	//text-align: left;
-//}
+
 
 td {
 	text-align:center;
+}
+
+.session {
+	color: #4380D3;
+	font-weight:bold;
+}
+
+//Media Queries
+@media #{$small} {
+	#wrapper {
+		max-width: 960px;
+		margin: 60px auto;
+		@include border-radius(5px);
+	}
+
+
+}
+
+@media only screen and (max-width: #{$small-screen}) {
+	table tr th,
+	table tr td {
+	  padding: 0.28em 0.31em;
+	}
+
+	.map{
+		text-align:center;
+	}
 }

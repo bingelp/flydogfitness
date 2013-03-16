@@ -3901,19 +3901,7 @@ html {
   background-color: white;
 }
 
-@media only screen and (min-width: 48em) {
-  /* line 65, ../sass/app.scss */
-  #wrapper {
-    max-width: 960px;
-    margin: 60px auto;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-  }
-}
-/* line 78, ../sass/app.scss */
+/* line 66, ../sass/app.scss */
 footer {
   background-color: #555;
   -moz-border-radius-bottomleft: 5px;
@@ -3925,12 +3913,12 @@ footer {
   height: 95px;
 }
 
-/* line 84, ../sass/app.scss */
+/* line 72, ../sass/app.scss */
 .center {
   margin: 10px auto;
 }
 
-/* line 88, ../sass/app.scss */
+/* line 76, ../sass/app.scss */
 .fb-sprite {
   background: url("img/icons.png") no-repeat -24px -59px;
   background-size: 54px 522px;
@@ -3938,23 +3926,23 @@ footer {
   height: 25px;
 }
 
-/* line 100, ../sass/app.scss */
+/* line 88, ../sass/app.scss */
 .top-bar-section ul li.active a {
   background: #0b3979;
 }
 
-/* line 104, ../sass/app.scss */
+/* line 92, ../sass/app.scss */
 .top-bar-section li a:not(.button):hover {
   background: #092e62;
 }
 
-/* line 108, ../sass/app.scss */
+/* line 96, ../sass/app.scss */
 .nivoSlider {
   position: relative;
   background: url(images/loading.gif) no-repeat 50% 50%;
 }
 
-/* line 112, ../sass/app.scss */
+/* line 100, ../sass/app.scss */
 .nivoSlider img {
   position: absolute;
   top: 0px;
@@ -3962,49 +3950,49 @@ footer {
   display: none;
 }
 
-/* line 118, ../sass/app.scss */
+/* line 106, ../sass/app.scss */
 .nivoSlider a {
   border: 0;
   display: block;
 }
 
-/* line 122, ../sass/app.scss */
+/* line 110, ../sass/app.scss */
 .nivo-directionNav {
   margin-bottom: 30px;
 }
 
-/* line 127, ../sass/app.scss */
+/* line 115, ../sass/app.scss */
 h1 {
   color: #FF6700;
   text-shadow: #333 0.1em 0.1em 0.2em;
 }
 
-/* line 133, ../sass/app.scss */
+/* line 121, ../sass/app.scss */
 h2 {
   color: #0F4FA8;
 }
 
-/* line 137, ../sass/app.scss */
+/* line 125, ../sass/app.scss */
 h3 {
   color: #4380D3;
 }
 
-/* line 140, ../sass/app.scss */
+/* line 128, ../sass/app.scss */
 strong {
   color: #4380D3;
 }
 
-/* line 143, ../sass/app.scss */
+/* line 131, ../sass/app.scss */
 p a:not(.button) {
   color: #FF6700;
   font-weight: bold;
 }
-/* line 146, ../sass/app.scss */
+/* line 134, ../sass/app.scss */
 p a:not(.button):hover {
   text-decoration: underline;
 }
 
-/* line 151, ../sass/app.scss */
+/* line 139, ../sass/app.scss */
 .map {
   border-style: solid;
   border-width: 1px;
@@ -4013,19 +4001,50 @@ p a:not(.button):hover {
   padding: 1.25em;
   background: #f2f2f2;
 }
-/* line 159, ../sass/app.scss */
+/* line 147, ../sass/app.scss */
 .map img {
   margin: 10px auto;
   display: block;
 }
 
-/* line 165, ../sass/app.scss */
+/* line 153, ../sass/app.scss */
 table {
   margin: auto;
   width: auto;
 }
 
-/* line 177, ../sass/app.scss */
+/* line 160, ../sass/app.scss */
 td {
   text-align: center;
+}
+
+/* line 164, ../sass/app.scss */
+.session {
+  color: #4380D3;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 48em) {
+  /* line 171, ../sass/app.scss */
+  #wrapper {
+    max-width: 960px;
+    margin: 60px auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+  }
+}
+@media only screen and (max-width: 48em) {
+  /* line 182, ../sass/app.scss */
+  table tr th,
+  table tr td {
+    padding: 0.28em 0.31em;
+  }
+
+  /* line 186, ../sass/app.scss */
+  .map {
+    text-align: center;
+  }
 }
