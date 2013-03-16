@@ -1,0 +1,179 @@
+// Global Foundation Settings
+@import "settings";
+
+// Comment out this import if you are customizing you imports below
+//@import "foundation";
+
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+@import "foundation/foundation-global";
+@import "foundation/components/global";
+@import "foundation/components/grid";
+@import "foundation/components/visibility";
+@import "foundation/components/block-grid";
+@import "foundation/components/type";
+@import "foundation/components/buttons";
+@import "foundation/components/forms";
+@import "foundation/components/custom-forms";
+// @import "foundation/components/button-groups";
+// @import "foundation/components/dropdown-buttons";
+// @import "foundation/components/split-buttons";
+// @import "foundation/components/flex-video";
+@import "foundation/components/section";
+@import "foundation/components/top-bar";
+@import "foundation/components/orbit";
+// @import "foundation/components/reveal";
+// @import "foundation/components/joyride";
+@import "foundation/components/clearing";
+// @import "foundation/components/alert-boxes";
+// @import "foundation/components/breadcrumbs";
+// @import "foundation/components/keystrokes";
+// @import "foundation/components/labels";
+@import "foundation/components/inline-lists";
+// @import "foundation/components/pagination";
+@import "foundation/components/panels";
+// @import "foundation/components/pricing-tables";
+// @import "foundation/components/progress-bars";
+// @import "foundation/components/side-nav";
+// @import "foundation/components/sub-nav";
+// @import "foundation/components/switch";
+// @import "foundation/components/magellan";
+@import "foundation/components/tables";
+// @import "foundation/components/thumbs";
+// @import "foundation/components/tooltips";
+// @import "foundation/components/dropdown";
+
+//Mixins
+@import "compass/css3/background-size";
+@import "compass/css3/border-radius";
+
+@import url(http://font.googleapis.com/css/css?family=Open+Sans:400italic,400,700);
+
+
+html {
+	background: url(../img/park.jpg) no-repeat center center fixed;
+	@include background-size(cover);
+
+}
+
+#wrapper {
+	background-color: white;
+}
+
+@media #{$small} {
+	#wrapper {
+		max-width: 960px;
+		margin: 60px auto;
+		@include border-radius(5px);
+	}
+
+	table {
+	//width: 80%;
+	//margin-left: 10%;
+	//margin-right: 10%;
+	}
+}
+
+footer {
+	background-color: #555;
+	@include border-bottom-radius(5px);
+	height: 95px;
+}
+
+.center {
+	margin: 10px auto;
+}
+
+.fb-sprite{
+background: url('img/icons.png') no-repeat -24px -59px;
+background-size: 54px 522px;
+width: 25px;
+height: 25px;
+}
+
+.twitter-sprite
+{
+
+}
+
+.top-bar-section ul li.active a {
+	background: darken($topbar-bg, 10%);
+}
+
+.top-bar-section li a:not(.button):hover {
+    background: darken($topbar-bg, 15%);
+  }
+
+.nivoSlider {
+    position:relative;
+    background:url(images/loading.gif) no-repeat 50% 50%;
+}
+.nivoSlider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+}
+.nivoSlider a {
+    border:0;
+    display:block;
+}
+.nivo-directionNav{
+	margin-bottom: 30px;
+}
+
+h1
+{
+	color: #FF6700;
+	text-shadow: #333 0.1em 0.1em 0.2em;
+}
+
+h2
+	{
+		color: #0F4FA8;
+	}
+	h3
+	{
+		color: #4380D3;
+	}
+strong{
+	color: #4380D3;
+	}
+p a:not(.button){
+	color: #FF6700;
+	font-weight: bold;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.map {
+
+	border-style: solid;
+  	border-width: 1px;
+  	border-color: #d9d9d9;
+  	margin-bottom: 1.25em;
+  	padding: 1.25em;
+  	background: #f2f2f2;
+	img{
+	margin: 10px auto;
+	display: block;
+	}
+}
+
+table {
+	//width: 100%;
+	//margin-left: 15%;
+	//margin-right: 15%;
+	margin: auto;
+	width: auto;
+}
+
+//tr {
+	//text-align: left;
+//}
+
+td {
+	text-align:center;
+}
