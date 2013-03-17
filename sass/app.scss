@@ -148,9 +148,16 @@ p a:not(.button){
   	margin-bottom: 1.25em;
   	padding: 1.25em;
   	background: #f2f2f2;
+  	a h3:hover{
+  		text-decoration:underline;
+  	}
 	img{
 	margin: 10px auto;
 	display: block;
+	&:hover{
+		opacity: 0.8;
+		@include single-box-shadow; 
+	}
 	}
 }
 
