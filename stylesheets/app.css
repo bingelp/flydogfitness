@@ -4015,7 +4015,7 @@ p a:not(.button):hover {
 /* line 157, ../sass/app.scss */
 table {
   margin: 20px auto;
-  width: auto;
+  width: 100%;
 }
 
 /* line 163, ../sass/app.scss */
@@ -4052,7 +4052,6 @@ td {
 hr {
   border: 0;
   height: 1px;
-  margin: 20px 0;
   background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0)));
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
   background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
@@ -4061,7 +4060,7 @@ hr {
 }
 
 @media only screen and (min-width: 48em) {
-  /* line 201, ../sass/app.scss */
+  /* line 200, ../sass/app.scss */
   #wrapper {
     max-width: 960px;
     margin: 60px auto;
@@ -4073,13 +4072,13 @@ hr {
   }
 }
 @media only screen and (max-width: 48em) {
-  /* line 212, ../sass/app.scss */
+  /* line 209, ../sass/app.scss */
   table tr th,
   table tr td {
     padding: 0.28em 0.31em;
   }
 
-  /* line 216, ../sass/app.scss */
+  /* line 213, ../sass/app.scss */
   .map {
     text-align: center;
   }

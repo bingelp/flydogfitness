@@ -156,7 +156,7 @@ p a:not(.button){
 
 table {
 	margin: 20px auto;
-	width: auto;
+	width: 100%;
 }
 
 th, td, tr
@@ -187,13 +187,12 @@ td {
 	}
 }
 
-	hr{
+hr{
 	border: 0;
-    height: 1px;
-    margin: 20px 0;
-    @include background-image(linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.4), rgba(0,0,0,0)));
+	height: 1px;
+	@include background-image(linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.4), rgba(0,0,0,0)));
 
-	}
+}
 
 
 //Media Queries
@@ -203,8 +202,6 @@ td {
 		margin: 60px auto;
 		@include border-radius(5px);
 	}
-
-
 }
 
 @media only screen and (max-width: #{$small-screen}) {
@@ -216,6 +213,23 @@ td {
 	.map{
 		text-align:center;
 	}
+}
+
+@media #{$medium}{
+	//header{
+	//	div {
+	//		position: absolute;
+	//		height: 100%;
+	//		width: 100%;
+	//		display: table;
+	//	}
+	//	h3 {
+	//		display: table-cell;
+	//		vertical-align: middle;
+	//		text-align: center;
+	//	}
+	//}
+
 }
 
 
