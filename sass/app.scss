@@ -45,6 +45,7 @@
 // @import "foundation/components/dropdown";
 
 //Mixins
+@import "compass";
 @import "compass/css3/background-size";
 @import "compass/css3/border-radius";
 
@@ -54,7 +55,6 @@
 html {
 	background: url(../img/park.jpg) no-repeat center center fixed;
 	@include background-size(cover);
-
 }
 
 #wrapper {
@@ -66,7 +66,11 @@ html {
 footer {
 	background-color: #555;
 	@include border-bottom-radius(5px);
-	height: 95px;
+	min-height: 95px;
+	padding: 10px;
+	h5{
+		color:white;
+	}
 }
 
 .center {
@@ -151,11 +155,14 @@ p a:not(.button){
 }
 
 table {
-	margin: auto;
+	margin: 20px auto;
 	width: auto;
 }
 
-
+th, td, tr
+	{
+		border: 1px solid #4380D3;
+	}
 
 td {
 	text-align:center;
@@ -165,6 +172,29 @@ td {
 	color: #4380D3;
 	font-weight:bold;
 }
+
+.bingeltech {
+	p{
+		margin-bottom:0;
+	}
+	img {
+		//vertical-align:middle;
+		width:106px;
+		height:35px;
+		&:hover{
+			opacity:0.4;
+		}
+	}
+}
+
+	hr{
+	border: 0;
+    height: 1px;
+    margin: 20px 0;
+    @include background-image(linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.4), rgba(0,0,0,0)));
+
+	}
+
 
 //Media Queries
 @media #{$small} {
@@ -187,3 +217,5 @@ td {
 		text-align:center;
 	}
 }
+
+

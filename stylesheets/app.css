@@ -3887,7 +3887,7 @@ table tfoot tr td {
   line-height: 1.125em;
 }
 
-/* line 54, ../sass/app.scss */
+/* line 55, ../sass/app.scss */
 html {
   background: url(../img/park.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -3910,15 +3910,20 @@ footer {
   -moz-border-radius-bottomright: 5px;
   -webkit-border-bottom-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  height: 95px;
+  min-height: 95px;
+  padding: 10px;
+}
+/* line 71, ../sass/app.scss */
+footer h5 {
+  color: white;
 }
 
-/* line 72, ../sass/app.scss */
+/* line 76, ../sass/app.scss */
 .center {
   margin: 10px auto;
 }
 
-/* line 76, ../sass/app.scss */
+/* line 80, ../sass/app.scss */
 .fb-sprite {
   background: url("img/icons.png") no-repeat -24px -59px;
   background-size: 54px 522px;
@@ -3926,23 +3931,23 @@ footer {
   height: 25px;
 }
 
-/* line 88, ../sass/app.scss */
+/* line 92, ../sass/app.scss */
 .top-bar-section ul li.active a {
   background: #0b3979;
 }
 
-/* line 92, ../sass/app.scss */
+/* line 96, ../sass/app.scss */
 .top-bar-section li a:not(.button):hover {
   background: #092e62;
 }
 
-/* line 96, ../sass/app.scss */
+/* line 100, ../sass/app.scss */
 .nivoSlider {
   position: relative;
   background: url(images/loading.gif) no-repeat 50% 50%;
 }
 
-/* line 100, ../sass/app.scss */
+/* line 104, ../sass/app.scss */
 .nivoSlider img {
   position: absolute;
   top: 0px;
@@ -3950,49 +3955,49 @@ footer {
   display: none;
 }
 
-/* line 106, ../sass/app.scss */
+/* line 110, ../sass/app.scss */
 .nivoSlider a {
   border: 0;
   display: block;
 }
 
-/* line 110, ../sass/app.scss */
+/* line 114, ../sass/app.scss */
 .nivo-directionNav {
   margin-bottom: 30px;
 }
 
-/* line 115, ../sass/app.scss */
+/* line 119, ../sass/app.scss */
 h1 {
   color: #FF6700;
   text-shadow: #333 0.1em 0.1em 0.2em;
 }
 
-/* line 121, ../sass/app.scss */
+/* line 125, ../sass/app.scss */
 h2 {
   color: #0F4FA8;
 }
 
-/* line 125, ../sass/app.scss */
+/* line 129, ../sass/app.scss */
 h3 {
   color: #4380D3;
 }
 
-/* line 128, ../sass/app.scss */
+/* line 132, ../sass/app.scss */
 strong {
   color: #4380D3;
 }
 
-/* line 131, ../sass/app.scss */
+/* line 135, ../sass/app.scss */
 p a:not(.button) {
   color: #FF6700;
   font-weight: bold;
 }
-/* line 134, ../sass/app.scss */
+/* line 138, ../sass/app.scss */
 p a:not(.button):hover {
   text-decoration: underline;
 }
 
-/* line 139, ../sass/app.scss */
+/* line 143, ../sass/app.scss */
 .map {
   border-style: solid;
   border-width: 1px;
@@ -4001,31 +4006,62 @@ p a:not(.button):hover {
   padding: 1.25em;
   background: #f2f2f2;
 }
-/* line 147, ../sass/app.scss */
+/* line 151, ../sass/app.scss */
 .map img {
   margin: 10px auto;
   display: block;
 }
 
-/* line 153, ../sass/app.scss */
+/* line 157, ../sass/app.scss */
 table {
-  margin: auto;
+  margin: 20px auto;
   width: auto;
 }
 
-/* line 160, ../sass/app.scss */
+/* line 163, ../sass/app.scss */
+th, td, tr {
+  border: 1px solid #4380D3;
+}
+
+/* line 167, ../sass/app.scss */
 td {
   text-align: center;
 }
 
-/* line 164, ../sass/app.scss */
+/* line 171, ../sass/app.scss */
 .session {
   color: #4380D3;
   font-weight: bold;
 }
 
+/* line 177, ../sass/app.scss */
+.bingeltech p {
+  margin-bottom: 0;
+}
+/* line 180, ../sass/app.scss */
+.bingeltech img {
+  width: 106px;
+  height: 35px;
+}
+/* line 184, ../sass/app.scss */
+.bingeltech img:hover {
+  opacity: 0.4;
+}
+
+/* line 190, ../sass/app.scss */
+hr {
+  border: 0;
+  height: 1px;
+  margin: 20px 0;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
+
 @media only screen and (min-width: 48em) {
-  /* line 171, ../sass/app.scss */
+  /* line 201, ../sass/app.scss */
   #wrapper {
     max-width: 960px;
     margin: 60px auto;
@@ -4037,13 +4073,13 @@ td {
   }
 }
 @media only screen and (max-width: 48em) {
-  /* line 182, ../sass/app.scss */
+  /* line 212, ../sass/app.scss */
   table tr th,
   table tr td {
     padding: 0.28em 0.31em;
   }
 
-  /* line 186, ../sass/app.scss */
+  /* line 216, ../sass/app.scss */
   .map {
     text-align: center;
   }
