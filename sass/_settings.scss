@@ -74,16 +74,16 @@ $header-font-family: 'Open Sans', sans-serif;
 // $header-font-weight: bold;
 // $header-font-style: normal;
 // $header-font-color: #222;
-// $header-line-height: 1.4;
+$header-line-height: 1;
 // $header-top-margin: .2em;
 // $header-bottom-margin: .5em;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-// $h1-font-size: emCalc(44px);
-// $h2-font-size: emCalc(37px);
-// $h3-font-size: emCalc(27px);
-// $h4-font-size: emCalc(23px);
+$h1-font-size: emCalc(37px); //44
+$h2-font-size: emCalc(32px); //37
+//$h3-font-size: emCalc(27px);
+//$h4-font-size: emCalc(23px);
 // $h5-font-size: emCalc(18px);
 // $h6-font-size: 1em;
 
@@ -990,6 +990,6 @@ $topbar-bg: $primary-color;
 
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms;
-//$topbar-breakpoint: $small;//emCalc(940px); // Change to 9999px for always mobile layout
+$topbar-breakpoint: $small-screen;//emCalc(940px); // Change to 9999px for always mobile layout
 //$topbar-media-query: "only screen and (min-width "#{$small}")";
 

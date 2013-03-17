@@ -61,7 +61,9 @@ html {
 	background-color: white;
 }
 
-
+nav {
+	margin-bottom: 10px;
+}
 
 footer {
 	background-color: #555;
@@ -73,21 +75,16 @@ footer {
 	}
 }
 
+header {
+	h2{
+		margin: 10px;
+	}
+}
+
 .center {
 	margin: 10px auto;
 }
 
-.fb-sprite{
-background: url('img/icons.png') no-repeat -24px -59px;
-background-size: 54px 522px;
-width: 25px;
-height: 25px;
-}
-
-.twitter-sprite
-{
-
-}
 
 .top-bar-section ul li.active a {
 	background: darken($topbar-bg, 10%);
@@ -118,7 +115,7 @@ height: 25px;
 h1
 {
 	color: #FF6700;
-	//text-shadow: #333 0.1em 0.1em 0.2em;
+	text-shadow: #333 0.05em 0.05em 0.1em;
 }
 
 h2
@@ -198,8 +195,15 @@ hr{
 	border: 0;
 	height: 1px;
 	@include background-image(linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.4), rgba(0,0,0,0)));
-
 }
+
+.sprite {
+height:45px;
+	img{
+	padding:5px;
+	}
+}
+
 
 
 //Media Queries
@@ -222,21 +226,5 @@ hr{
 	}
 }
 
-@media #{$medium}{
-	//header{
-	//	div {
-	//		position: absolute;
-	//		height: 100%;
-	//		width: 100%;
-	//		display: table;
-	//	}
-	//	h3 {
-	//		display: table-cell;
-	//		vertical-align: middle;
-	//		text-align: center;
-	//	}
-	//}
-
-}
 
 
