@@ -247,8 +247,8 @@ hr{
 		color: #0F4FA8;
 	}
 
-	input.checkbox {
-		display:block;
+	input[type=checkbox] {
+		margin: 5px;
 	}
 
 //Media Queries

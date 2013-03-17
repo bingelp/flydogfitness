@@ -4140,8 +4140,13 @@ ul.contact-info li a {
   color: #0F4FA8;
 }
 
+/* line 250, ../sass/app.scss */
+input[type=checkbox] {
+  margin: 5px;
+}
+
 @media only screen and (min-width: 48em) {
-  /* line 253, ../sass/app.scss */
+  /* line 256, ../sass/app.scss */
   #wrapper {
     max-width: 960px;
     margin: 60px auto;
@@ -4153,22 +4158,22 @@ ul.contact-info li a {
   }
 }
 @media only screen and (max-width: 48em) {
-  /* line 262, ../sass/app.scss */
+  /* line 265, ../sass/app.scss */
   table tr th,
   table tr td {
     padding: 0.28em 0.31em;
   }
 
-  /* line 266, ../sass/app.scss */
+  /* line 269, ../sass/app.scss */
   .map {
     text-align: center;
   }
 
-  /* line 270, ../sass/app.scss */
+  /* line 273, ../sass/app.scss */
   .profile h2, .profile h3 {
     text-align: center;
   }
-  /* line 273, ../sass/app.scss */
+  /* line 276, ../sass/app.scss */
   .profile img {
     display: block;
     text-align: center;
