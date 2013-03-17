@@ -3968,38 +3968,45 @@ header h2 {
   margin-bottom: 30px;
 }
 
-/* line 116, ../sass/app.scss */
+/* line 115, ../sass/app.scss */
+.slider-wrapper {
+  max-width: 450px;
+  margin: 10px auto;
+  display: block;
+}
+
+/* line 122, ../sass/app.scss */
 h1 {
   color: #FF6700;
   text-shadow: #333 0.05em 0.05em 0.1em;
 }
 
-/* line 122, ../sass/app.scss */
+/* line 128, ../sass/app.scss */
 h2 {
   color: #0F4FA8;
 }
 
-/* line 126, ../sass/app.scss */
+/* line 132, ../sass/app.scss */
 h3 {
   color: #4380D3;
 }
 
-/* line 129, ../sass/app.scss */
+/* line 135, ../sass/app.scss */
 strong {
   color: #4380D3;
 }
 
-/* line 132, ../sass/app.scss */
+/* line 138, ../sass/app.scss */
 p a:not(.button) {
   color: #FF6700;
   font-weight: bold;
 }
-/* line 135, ../sass/app.scss */
+/* line 141, ../sass/app.scss */
 p a:not(.button):hover {
   text-decoration: underline;
 }
 
-/* line 140, ../sass/app.scss */
+/* line 146, ../sass/app.scss */
 .map {
   border-style: solid;
   border-width: 1px;
@@ -4008,16 +4015,16 @@ p a:not(.button):hover {
   padding: 1.25em;
   background: #f2f2f2;
 }
-/* line 148, ../sass/app.scss */
+/* line 154, ../sass/app.scss */
 .map a h3:hover {
   text-decoration: underline;
 }
-/* line 151, ../sass/app.scss */
+/* line 157, ../sass/app.scss */
 .map img {
   margin: 10px auto;
   display: block;
 }
-/* line 154, ../sass/app.scss */
+/* line 160, ../sass/app.scss */
 .map img:hover {
   opacity: 0.8;
   -webkit-box-shadow: 0px 0px 5px #333333;
@@ -4025,43 +4032,43 @@ p a:not(.button):hover {
   box-shadow: 0px 0px 5px #333333;
 }
 
-/* line 161, ../sass/app.scss */
+/* line 167, ../sass/app.scss */
 table {
   margin: 20px auto;
   width: 100%;
 }
 
-/* line 167, ../sass/app.scss */
+/* line 173, ../sass/app.scss */
 th, td, tr {
   border: 1px solid #4380D3;
 }
 
-/* line 171, ../sass/app.scss */
+/* line 177, ../sass/app.scss */
 td {
   text-align: center;
 }
 
-/* line 175, ../sass/app.scss */
+/* line 181, ../sass/app.scss */
 .session {
   color: #4380D3;
   font-weight: bold;
 }
 
-/* line 181, ../sass/app.scss */
+/* line 187, ../sass/app.scss */
 .bingeltech p {
   margin-bottom: 0;
 }
-/* line 184, ../sass/app.scss */
+/* line 190, ../sass/app.scss */
 .bingeltech img {
   width: 106px;
   height: 35px;
 }
-/* line 188, ../sass/app.scss */
+/* line 194, ../sass/app.scss */
 .bingeltech img:hover {
   opacity: 0.4;
 }
 
-/* line 194, ../sass/app.scss */
+/* line 200, ../sass/app.scss */
 hr {
   border: 0;
   height: 1px;
@@ -4072,17 +4079,17 @@ hr {
   background-image: linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
 }
 
-/* line 200, ../sass/app.scss */
+/* line 206, ../sass/app.scss */
 .sprite {
   height: 45px;
 }
-/* line 202, ../sass/app.scss */
+/* line 208, ../sass/app.scss */
 .sprite img {
   padding: 5px;
 }
 
 @media only screen and (min-width: 48em) {
-  /* line 211, ../sass/app.scss */
+  /* line 217, ../sass/app.scss */
   #wrapper {
     max-width: 960px;
     margin: 60px auto;
@@ -4094,13 +4101,13 @@ hr {
   }
 }
 @media only screen and (max-width: 48em) {
-  /* line 220, ../sass/app.scss */
+  /* line 226, ../sass/app.scss */
   table tr th,
   table tr td {
     padding: 0.28em 0.31em;
   }
 
-  /* line 224, ../sass/app.scss */
+  /* line 230, ../sass/app.scss */
   .map {
     text-align: center;
   }
