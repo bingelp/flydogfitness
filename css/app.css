@@ -4088,23 +4088,21 @@ hr {
   padding: 5px;
 }
 
-/* line 214, ../sass/app.scss */
-.profile h2, .profile h3 {
-  text-align: center;
-}
 /* line 218, ../sass/app.scss */
 .profile ul {
   margin-left: 1em;
+  margin-bottom: .75em;
 }
-/* line 222, ../sass/app.scss */
+/* line 223, ../sass/app.scss */
 .profile img {
   width: 200px;
   height: 200px;
   box-shadow: 5px 5px 2px #888888;
+  margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 48em) {
-  /* line 232, ../sass/app.scss */
+  /* line 234, ../sass/app.scss */
   #wrapper {
     max-width: 960px;
     margin: 60px auto;
@@ -4116,18 +4114,22 @@ hr {
   }
 }
 @media only screen and (max-width: 48em) {
-  /* line 241, ../sass/app.scss */
+  /* line 243, ../sass/app.scss */
   table tr th,
   table tr td {
     padding: 0.28em 0.31em;
   }
 
-  /* line 245, ../sass/app.scss */
+  /* line 247, ../sass/app.scss */
   .map {
     text-align: center;
   }
 
-  /* line 249, ../sass/app.scss */
+  /* line 251, ../sass/app.scss */
+  .profile h2, .profile h3 {
+    text-align: center;
+  }
+  /* line 254, ../sass/app.scss */
   .profile img {
     display: block;
     text-align: center;

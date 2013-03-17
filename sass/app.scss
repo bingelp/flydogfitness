@@ -211,18 +211,20 @@ hr{
 }
 
 .profile {
-	h2, h3 {
-	text-align: center;
-	}
+	//h2, h3 {
+	//text-align: center;
+	//}
 
 	ul{
 		margin-left: 1em;
+		margin-bottom: .75em;
 	}
 
 	img {
 	width: 200px;
 	height: 200px;
 	box-shadow: 5px 5px 2px #888888;	
+	margin-bottom: 30px;
 	}
 }
 
@@ -246,6 +248,9 @@ hr{
 		text-align:center;
 	}
 	.profile {
+			h2, h3 {
+	text-align: center;
+	}
 		img{
 			display:block;
 		text-align:center;
