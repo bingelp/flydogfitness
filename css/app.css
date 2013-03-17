@@ -3946,7 +3946,7 @@ header h2 {
 /* line 97, ../sass/app.scss */
 .nivoSlider {
   position: relative;
-  background: url(images/loading.gif) no-repeat 50% 50%;
+  background: url(../img/loading.gif) no-repeat 50% 50%;
 }
 
 /* line 101, ../sass/app.scss */
@@ -4088,8 +4088,23 @@ hr {
   padding: 5px;
 }
 
+/* line 214, ../sass/app.scss */
+.profile h2, .profile h3 {
+  text-align: center;
+}
+/* line 218, ../sass/app.scss */
+.profile ul {
+  margin-left: 1em;
+}
+/* line 222, ../sass/app.scss */
+.profile img {
+  width: 200px;
+  height: 200px;
+  box-shadow: 5px 5px 2px #888888;
+}
+
 @media only screen and (min-width: 48em) {
-  /* line 217, ../sass/app.scss */
+  /* line 232, ../sass/app.scss */
   #wrapper {
     max-width: 960px;
     margin: 60px auto;
@@ -4101,14 +4116,21 @@ hr {
   }
 }
 @media only screen and (max-width: 48em) {
-  /* line 226, ../sass/app.scss */
+  /* line 241, ../sass/app.scss */
   table tr th,
   table tr td {
     padding: 0.28em 0.31em;
   }
 
-  /* line 230, ../sass/app.scss */
+  /* line 245, ../sass/app.scss */
   .map {
     text-align: center;
+  }
+
+  /* line 249, ../sass/app.scss */
+  .profile img {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
   }
 }

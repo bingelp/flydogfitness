@@ -96,7 +96,7 @@ header {
 
 .nivoSlider {
     position:relative;
-    background:url(images/loading.gif) no-repeat 50% 50%;
+    background:url(../img/loading.gif) no-repeat 50% 50%;
 }
 .nivoSlider img {
     position:absolute;
@@ -204,12 +204,27 @@ hr{
 }
 
 .sprite {
-height:45px;
+	height:45px;
 	img{
 	padding:5px;
 	}
 }
 
+.profile {
+	h2, h3 {
+	text-align: center;
+	}
+
+	ul{
+		margin-left: 1em;
+	}
+
+	img {
+	width: 200px;
+	height: 200px;
+	box-shadow: 5px 5px 2px #888888;	
+	}
+}
 
 
 //Media Queries
@@ -229,6 +244,13 @@ height:45px;
 
 	.map{
 		text-align:center;
+	}
+	.profile {
+		img{
+			display:block;
+		text-align:center;
+		margin: 10px auto;
+		}
 	}
 }
 
