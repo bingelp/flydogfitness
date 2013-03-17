@@ -2135,11 +2135,11 @@ form .row .row {
 /* Label Styles */
 /* line 253, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.0.5/scss/foundation/components/_forms.scss */
 label {
-  font-size: 0.875em;
-  color: #4d4d4d;
+  font-size: 1em;
+  color: #0f4fa8;
   cursor: pointer;
   display: block;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 0.1875em;
 }
 /* line 254, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.0.5/scss/foundation/components/_forms.scss */
@@ -2167,9 +2167,9 @@ label.inline {
   border-style: solid;
   border-width: 1px;
   overflow: hidden;
-  font-size: 0.875em;
-  height: 2.3125em;
-  line-height: 2.3125em;
+  font-size: 1em;
+  height: 2.4375em;
+  line-height: 2.4375em;
 }
 
 /* Adjust padding, alignment and radius if pre/post element is a button */
@@ -4088,12 +4088,12 @@ hr {
   padding: 5px;
 }
 
-/* line 218, ../sass/app.scss */
+/* line 215, ../sass/app.scss */
 .profile ul {
   margin-left: 1em;
   margin-bottom: .75em;
 }
-/* line 223, ../sass/app.scss */
+/* line 220, ../sass/app.scss */
 .profile img {
   width: 200px;
   height: 200px;
@@ -4101,8 +4101,47 @@ hr {
   margin-bottom: 30px;
 }
 
+/* line 228, ../sass/app.scss */
+.communitypic {
+  box-shadow: 5px 5px 2px #888888;
+}
+
+/* line 233, ../sass/app.scss */
+ul.contact-info li {
+  padding: 10px 40px;
+  list-style: none;
+  margin-top: 5px;
+}
+
+/* line 238, ../sass/app.scss */
+li.contact-email {
+  background: url(../img/envelope.gif) no-repeat left;
+}
+
+/* line 239, ../sass/app.scss */
+li.contact-phone {
+  background: url(../img/tel.gif) no-repeat left;
+}
+
+/* line 240, ../sass/app.scss */
+li.contact-facebook {
+  background: url(../img/facebook.gif) no-repeat left;
+}
+
+/* line 241, ../sass/app.scss */
+li.contact-twitter {
+  background: url(../img/twitter.gif) no-repeat left;
+}
+
+/* line 244, ../sass/app.scss */
+ul.contact-info li a {
+  padding: 5px;
+  text-decoration: none;
+  color: #0F4FA8;
+}
+
 @media only screen and (min-width: 48em) {
-  /* line 234, ../sass/app.scss */
+  /* line 253, ../sass/app.scss */
   #wrapper {
     max-width: 960px;
     margin: 60px auto;
@@ -4114,22 +4153,22 @@ hr {
   }
 }
 @media only screen and (max-width: 48em) {
-  /* line 243, ../sass/app.scss */
+  /* line 262, ../sass/app.scss */
   table tr th,
   table tr td {
     padding: 0.28em 0.31em;
   }
 
-  /* line 247, ../sass/app.scss */
+  /* line 266, ../sass/app.scss */
   .map {
     text-align: center;
   }
 
-  /* line 251, ../sass/app.scss */
+  /* line 270, ../sass/app.scss */
   .profile h2, .profile h3 {
     text-align: center;
   }
-  /* line 254, ../sass/app.scss */
+  /* line 273, ../sass/app.scss */
   .profile img {
     display: block;
     text-align: center;
