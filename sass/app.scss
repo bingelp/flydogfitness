@@ -204,13 +204,19 @@ hr{
 	@include background-image(linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.4), rgba(0,0,0,0)));
 }
 
+
 .sprite {
 	height:45px;
 	img{
 	padding:5px;
 	}
 }
-
+.events {
+	ul{
+		margin-left: 1em;
+		list-style: square;
+	}
+}
 .profile {
 
 	ul{
