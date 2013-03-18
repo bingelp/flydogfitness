@@ -3931,25 +3931,26 @@ header h2 {
 /* line 84, ../sass/app.scss */
 .center {
   margin: 10px auto;
+  display: block;
 }
 
-/* line 89, ../sass/app.scss */
+/* line 90, ../sass/app.scss */
 .top-bar-section ul li.active a {
   background: #0b3979;
 }
 
-/* line 93, ../sass/app.scss */
+/* line 94, ../sass/app.scss */
 .top-bar-section li a:not(.button):hover {
   background: #092e62;
 }
 
-/* line 97, ../sass/app.scss */
+/* line 98, ../sass/app.scss */
 .nivoSlider {
   position: relative;
   background: url(../img/loading.gif) no-repeat 50% 50%;
 }
 
-/* line 101, ../sass/app.scss */
+/* line 102, ../sass/app.scss */
 .nivoSlider img {
   position: absolute;
   top: 0px;
@@ -3957,56 +3958,56 @@ header h2 {
   display: none;
 }
 
-/* line 107, ../sass/app.scss */
+/* line 108, ../sass/app.scss */
 .nivoSlider a {
   border: 0;
   display: block;
 }
 
-/* line 111, ../sass/app.scss */
+/* line 112, ../sass/app.scss */
 .nivo-directionNav {
   margin-bottom: 30px;
 }
 
-/* line 115, ../sass/app.scss */
+/* line 116, ../sass/app.scss */
 .slider-wrapper {
   max-width: 450px;
   margin: 10px auto;
   display: block;
 }
 
-/* line 122, ../sass/app.scss */
+/* line 123, ../sass/app.scss */
 h1 {
   color: #FF6700;
   text-shadow: #333 0.05em 0.05em 0.1em;
 }
 
-/* line 128, ../sass/app.scss */
+/* line 129, ../sass/app.scss */
 h2 {
   color: #0F4FA8;
 }
 
-/* line 132, ../sass/app.scss */
+/* line 133, ../sass/app.scss */
 h3 {
   color: #4380D3;
 }
 
-/* line 135, ../sass/app.scss */
+/* line 136, ../sass/app.scss */
 strong {
   color: #4380D3;
 }
 
-/* line 138, ../sass/app.scss */
+/* line 139, ../sass/app.scss */
 p a:not(.button) {
   color: #FF6700;
   font-weight: bold;
 }
-/* line 141, ../sass/app.scss */
+/* line 142, ../sass/app.scss */
 p a:not(.button):hover {
   text-decoration: underline;
 }
 
-/* line 146, ../sass/app.scss */
+/* line 147, ../sass/app.scss */
 .map {
   border-style: solid;
   border-width: 1px;
@@ -4015,16 +4016,16 @@ p a:not(.button):hover {
   padding: 1.25em;
   background: #f2f2f2;
 }
-/* line 154, ../sass/app.scss */
+/* line 155, ../sass/app.scss */
 .map a h3:hover {
   text-decoration: underline;
 }
-/* line 157, ../sass/app.scss */
+/* line 158, ../sass/app.scss */
 .map img {
   margin: 10px auto;
   display: block;
 }
-/* line 160, ../sass/app.scss */
+/* line 161, ../sass/app.scss */
 .map img:hover {
   opacity: 0.8;
   -webkit-box-shadow: 0px 0px 5px #333333;
@@ -4032,43 +4033,43 @@ p a:not(.button):hover {
   box-shadow: 0px 0px 5px #333333;
 }
 
-/* line 167, ../sass/app.scss */
+/* line 168, ../sass/app.scss */
 table {
   margin: 20px auto;
   width: 100%;
 }
 
-/* line 173, ../sass/app.scss */
+/* line 174, ../sass/app.scss */
 th, td, tr {
   border: 1px solid #4380D3;
 }
 
-/* line 177, ../sass/app.scss */
+/* line 178, ../sass/app.scss */
 td {
   text-align: center;
 }
 
-/* line 181, ../sass/app.scss */
+/* line 182, ../sass/app.scss */
 .session {
   color: #4380D3;
   font-weight: bold;
 }
 
-/* line 187, ../sass/app.scss */
+/* line 188, ../sass/app.scss */
 .bingeltech p {
   margin-bottom: 0;
 }
-/* line 190, ../sass/app.scss */
+/* line 191, ../sass/app.scss */
 .bingeltech img {
   width: 106px;
   height: 35px;
 }
-/* line 194, ../sass/app.scss */
+/* line 195, ../sass/app.scss */
 .bingeltech img:hover {
   opacity: 0.4;
 }
 
-/* line 200, ../sass/app.scss */
+/* line 201, ../sass/app.scss */
 hr {
   border: 0;
   height: 1px;
@@ -4079,21 +4080,21 @@ hr {
   background-image: linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
 }
 
-/* line 206, ../sass/app.scss */
+/* line 207, ../sass/app.scss */
 .sprite {
   height: 45px;
 }
-/* line 208, ../sass/app.scss */
+/* line 209, ../sass/app.scss */
 .sprite img {
   padding: 5px;
 }
 
-/* line 215, ../sass/app.scss */
+/* line 216, ../sass/app.scss */
 .profile ul {
   margin-left: 1em;
   margin-bottom: .75em;
 }
-/* line 220, ../sass/app.scss */
+/* line 221, ../sass/app.scss */
 .profile img {
   width: 200px;
   height: 200px;
@@ -4101,52 +4102,52 @@ hr {
   margin-bottom: 30px;
 }
 
-/* line 228, ../sass/app.scss */
+/* line 229, ../sass/app.scss */
 .communitypic {
   box-shadow: 5px 5px 2px #888888;
 }
 
-/* line 233, ../sass/app.scss */
+/* line 234, ../sass/app.scss */
 ul.contact-info li {
   padding: 10px 40px;
   list-style: none;
   margin-top: 5px;
 }
 
-/* line 238, ../sass/app.scss */
+/* line 239, ../sass/app.scss */
 li.contact-email {
   background: url(../img/envelope.gif) no-repeat left;
 }
 
-/* line 239, ../sass/app.scss */
+/* line 240, ../sass/app.scss */
 li.contact-phone {
   background: url(../img/tel.gif) no-repeat left;
 }
 
-/* line 240, ../sass/app.scss */
+/* line 241, ../sass/app.scss */
 li.contact-facebook {
   background: url(../img/facebook.gif) no-repeat left;
 }
 
-/* line 241, ../sass/app.scss */
+/* line 242, ../sass/app.scss */
 li.contact-twitter {
   background: url(../img/twitter.gif) no-repeat left;
 }
 
-/* line 244, ../sass/app.scss */
+/* line 245, ../sass/app.scss */
 ul.contact-info li a {
   padding: 5px;
   text-decoration: none;
   color: #0F4FA8;
 }
 
-/* line 250, ../sass/app.scss */
+/* line 251, ../sass/app.scss */
 input[type=checkbox] {
   margin: 5px;
 }
 
 @media only screen and (min-width: 48em) {
-  /* line 256, ../sass/app.scss */
+  /* line 257, ../sass/app.scss */
   #wrapper {
     max-width: 960px;
     margin: 60px auto;
@@ -4158,22 +4159,22 @@ input[type=checkbox] {
   }
 }
 @media only screen and (max-width: 48em) {
-  /* line 265, ../sass/app.scss */
+  /* line 266, ../sass/app.scss */
   table tr th,
   table tr td {
     padding: 0.28em 0.31em;
   }
 
-  /* line 269, ../sass/app.scss */
+  /* line 270, ../sass/app.scss */
   .map {
     text-align: center;
   }
 
-  /* line 273, ../sass/app.scss */
+  /* line 274, ../sass/app.scss */
   .profile h2, .profile h3 {
     text-align: center;
   }
-  /* line 276, ../sass/app.scss */
+  /* line 277, ../sass/app.scss */
   .profile img {
     display: block;
     text-align: center;
