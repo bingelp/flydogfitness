@@ -3183,24 +3183,25 @@ hr {
 /* line 188, ../sass/app.scss */
 .sprite {
   height: 45px;
+  padding: 0;
 }
-/* line 190, ../sass/app.scss */
+/* line 191, ../sass/app.scss */
 .sprite img {
-  padding: 5px;
+  padding: 5px 0;
 }
 
-/* line 196, ../sass/app.scss */
+/* line 197, ../sass/app.scss */
 .events ul {
   margin-left: 1em;
   list-style: square;
 }
 
-/* line 203, ../sass/app.scss */
+/* line 204, ../sass/app.scss */
 .profile ul {
   margin-left: 1em;
   margin-bottom: .75em;
 }
-/* line 208, ../sass/app.scss */
+/* line 209, ../sass/app.scss */
 .profile img {
   width: 200px;
   height: 200px;
@@ -3208,51 +3209,51 @@ hr {
   margin-bottom: 30px;
 }
 
-/* line 216, ../sass/app.scss */
+/* line 217, ../sass/app.scss */
 .communitypic {
   box-shadow: 5px 5px 2px #888888;
 }
 
-/* line 221, ../sass/app.scss */
+/* line 222, ../sass/app.scss */
 .contact-info li {
   padding: 10px 40px;
   list-style: none;
   margin-top: 5px;
 }
-/* line 225, ../sass/app.scss */
+/* line 226, ../sass/app.scss */
 .contact-info li a {
   padding: 5px;
   text-decoration: none;
   color: #0F4FA8;
 }
 
-/* line 232, ../sass/app.scss */
+/* line 233, ../sass/app.scss */
 .contact-email {
   background: url(../img/envelope.gif) no-repeat left;
 }
 
-/* line 233, ../sass/app.scss */
+/* line 234, ../sass/app.scss */
 .contact-phone {
   background: url(../img/tel.gif) no-repeat left;
 }
 
-/* line 234, ../sass/app.scss */
+/* line 235, ../sass/app.scss */
 .contact-facebook {
   background: url(../img/facebook.gif) no-repeat left;
 }
 
-/* line 235, ../sass/app.scss */
+/* line 236, ../sass/app.scss */
 .contact-twitter {
   background: url(../img/twitter.gif) no-repeat left;
 }
 
-/* line 238, ../sass/app.scss */
+/* line 239, ../sass/app.scss */
 #wrapper {
   background-color: white;
 }
 
 @media only screen and (min-width: 48em) {
-  /* line 244, ../sass/app.scss */
+  /* line 245, ../sass/app.scss */
   #wrapper {
     max-width: 960px;
     margin: 60px auto;
@@ -3264,22 +3265,22 @@ hr {
   }
 }
 @media only screen and (max-width: 48em) {
-  /* line 253, ../sass/app.scss */
+  /* line 254, ../sass/app.scss */
   table tr th,
   table tr td {
     padding: 0.28em 0.31em;
   }
 
-  /* line 257, ../sass/app.scss */
+  /* line 258, ../sass/app.scss */
   .map {
     text-align: center;
   }
 
-  /* line 261, ../sass/app.scss */
+  /* line 262, ../sass/app.scss */
   .profile h2, .profile h3 {
     text-align: center;
   }
-  /* line 264, ../sass/app.scss */
+  /* line 265, ../sass/app.scss */
   .profile img {
     display: block;
     text-align: center;

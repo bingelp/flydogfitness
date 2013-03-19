@@ -23,12 +23,12 @@
 				<div class="row text-center">
 					<h2>Fitness Boot Camps & Personal Training in the Charleston Area</h2>
 				</div>
-				<div class="row">
+				<div class="row" id="signup">
 					<p class="text-center hide-for-medium-up"><a href="#" class="medium button success">Sign Up Now</a></p>
 				</div>
 			</div>
 		</header>
-		<nav class="top-bar">
+		<nav class="top-bar" id="menu">
 			<ul class="title-area">
 				<!-- Title Area -->
 				<li class="name">
@@ -46,7 +46,7 @@
 					<li class="divider"></li>
 					<li><a href="../#locdate">Location & Dates</a></li>
 					<li class="divider"></li>
-					<li><a href="../">Trainers</a></li>
+					<li><a href="../trainers">Trainers</a></li>
 					<li class="divider"></li>
 					<li><a href="../community">Community</a></li>
 					<li class="divider"></li>
@@ -56,20 +56,20 @@
 						<a href="#" class="button success ">Sign Up Now</a>
 					</li>
 					<li class="hide-for-medium-up">
-						<a href="http://www.facebook.com/FlyDogFitnessBootcamp" target="_blank">Facebook</a>
+						<a href="http://www.facebook.com/FlyDogFitnessBootCamp" target="_blank">Facebook - FlyDogFitnessBootCamp</a>
 					</li>
 					<li class="divider"></li>
 					<li class="hide-for-medium-up">
-						<a href="http://www.twiter.com/teamflydog" target="_blank">Twitter</a>
+						<a href="http://www.twitter.com/teamflydog" target="_blank">Twitter - @TeamFlyDog</a>
 					</li>
 				</ul>
 			</section>
 	      <section class="top-bar-section">
 	        <ul class="left">
 	          <li class="divider hide-for-small"></li>
-	          <li class="hide-for-small"><a href="http://www.facebook.com/FlyDogFitnessBootcamp" target="_blank"class="sprite"><img src="img/fb.png" alt="FlyDogFitnessBootcamp on Facebook"></img></a></li>
+	          <li class="hide-for-small"><a href="http://www.facebook.com/FlyDogFitnessBootCamp" target="_blank"class="sprite"><img src="../img/fb.png" alt="FlyDogFitnessBootCamp on Facebook"></img></a></li>
 	          <li class="divider hide-for-small"></li>
-	          <li class="hide-for-small"><a href="http://www.twiter.com/teamflydog" target="_blank" class="sprite"><img src="img/twitter.png" alt="@TeamFlyDog on Twitter"></img></a></li>
+	          <li class="hide-for-small"><a href="http://www.twitter.com/teamflydog" target="_blank" class="sprite"><img src="../img/twitter.png" alt="@TeamFlyDog on Twitter"></img></a></li>
 	          <li class="divider hide-for-small"></li>
 	        </ul>
 	    	</section>
@@ -121,7 +121,9 @@
 				</div>
 			</div>
 		</div>
-
+		<div class="row">
+			<p class="text-center hide-for-medium-up"><a href="#top" class="small button">Back to Top</a></p>
+		</div>
 		<footer class="row text-center">
 			<div class="small-12 large-4 columns">
 				<a><img src="../img/FlyDog_112x60.png"></img></a>
@@ -154,8 +156,15 @@
 
 	</script>
 
-	<script src="js/foundation/foundation.js"></script>
-	<script src="js/foundation/foundation.topbar.js"></script>
+	<script type="text/javascript">
+		$("a[href='#top']").click(function(){
+			$("#menu").addClass("expanded");
+			$("html, body").animate({scrollTop: $('#signup').offset().top-5}, "slow");
+		});
+	</script>
+
+	<script src="../js/foundation/foundation.js"></script>
+	<script src="../js/foundation/foundation.topbar.js"></script>
 
 
 	<script>
