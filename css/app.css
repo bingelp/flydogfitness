@@ -2983,7 +2983,284 @@ table tfoot tr td {
   line-height: 1.125em;
 }
 
-/* line 31, ../sass/app.scss */
+/*
+ * jQuery Nivo Slider v3.1
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+/* The Nivo Slider styles */
+/* line 11, ../sass/_nivo-slider.scss */
+.nivoSlider {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+/* line 17, ../sass/_nivo-slider.scss */
+.nivoSlider img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  max-width: none;
+}
+
+/* line 23, ../sass/_nivo-slider.scss */
+.nivo-main-image {
+  display: block !important;
+  position: relative !important;
+  width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+/* line 30, ../sass/_nivo-slider.scss */
+.nivoSlider a.nivo-imageLink {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 6;
+  display: none;
+}
+
+/* The slices and boxes in the Slider */
+/* line 43, ../sass/_nivo-slider.scss */
+.nivo-slice {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  height: 100%;
+  top: 0;
+}
+
+/* line 50, ../sass/_nivo-slider.scss */
+.nivo-box {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  overflow: hidden;
+}
+
+/* line 56, ../sass/_nivo-slider.scss */
+.nivo-box img {
+  display: block;
+}
+
+/* Caption styles */
+/* line 59, ../sass/_nivo-slider.scss */
+.nivo-caption {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background: #000;
+  color: #fff;
+  width: 100%;
+  z-index: 8;
+  padding: 5px 10px;
+  opacity: 0.8;
+  overflow: hidden;
+  display: none;
+  -moz-opacity: 0.8;
+  filter: alpha(opacity=8);
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+
+/* line 77, ../sass/_nivo-slider.scss */
+.nivo-caption p {
+  padding: 5px;
+  margin: 0;
+}
+
+/* line 81, ../sass/_nivo-slider.scss */
+.nivo-caption a {
+  display: inline !important;
+}
+
+/* line 84, ../sass/_nivo-slider.scss */
+.nivo-html-caption {
+  display: none;
+}
+
+/* Direction nav styles (e.g. Next & Prev) */
+/* line 88, ../sass/_nivo-slider.scss */
+.nivo-directionNav a {
+  position: absolute;
+  top: 45%;
+  z-index: 9;
+  cursor: pointer;
+}
+
+/* line 94, ../sass/_nivo-slider.scss */
+.nivo-prevNav {
+  left: 0px;
+}
+
+/* line 97, ../sass/_nivo-slider.scss */
+.nivo-nextNav {
+  right: 0px;
+}
+
+/* Control nav styles (e.g. 1,2,3...) */
+/* line 101, ../sass/_nivo-slider.scss */
+.nivo-controlNav {
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* line 105, ../sass/_nivo-slider.scss */
+.nivo-controlNav a {
+  cursor: pointer;
+}
+
+/* line 108, ../sass/_nivo-slider.scss */
+.nivo-controlNav a.active {
+  font-weight: bold;
+}
+
+/*
+Skin Name: Nivo Slider Light Theme
+Skin URI: http://nivo.dev7studios.com
+Description: A light skin for the Nivo Slider.
+Version: 1.0
+Author: Gilbert Pellegrom
+Author URI: http://dev7studios.com
+Supports Thumbs: true
+*/
+/* line 11, ../sass/_light.scss */
+.theme-light.slider-wrapper {
+  background: #fff;
+  padding: 10px;
+}
+
+/* line 15, ../sass/_light.scss */
+.theme-light .nivoSlider {
+  position: relative;
+  background: white url(../img/loading.gif) no-repeat 50% 50%;
+  margin-bottom: 10px;
+  overflow: visible;
+}
+
+/* line 21, ../sass/_light.scss */
+.theme-light .nivoSlider img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+
+/* line 27, ../sass/_light.scss */
+.theme-light .nivoSlider a {
+  border: 0;
+  display: block;
+}
+
+/* line 32, ../sass/_light.scss */
+.theme-light .nivo-controlNav {
+  text-align: left;
+  padding: 0;
+  position: relative;
+  z-index: 10;
+}
+
+/* line 38, ../sass/_light.scss */
+.theme-light .nivo-controlNav a {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url(../img/bullets.png) no-repeat;
+  text-indent: -9999px;
+  border: 0;
+  margin: 0 2px;
+}
+
+/* line 47, ../sass/_light.scss */
+.theme-light .nivo-controlNav a.active {
+  background-position: 0 100%;
+}
+
+/* line 51, ../sass/_light.scss */
+.theme-light .nivo-directionNav a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/arrows.png) no-repeat;
+  text-indent: -9999px;
+  border: 0;
+  top: auto;
+  bottom: -36px;
+  z-index: 11;
+}
+
+/* line 62, ../sass/_light.scss */
+.theme-light .nivo-directionNav a:hover {
+  background-color: #eee;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 68, ../sass/_light.scss */
+.theme-light a.nivo-nextNav {
+  background-position: 160% 50%;
+  right: 0px;
+}
+
+/* line 72, ../sass/_light.scss */
+.theme-light a.nivo-prevNav {
+  background-position: -60% 50%;
+  left: auto;
+  right: 35px;
+}
+
+/* line 78, ../sass/_light.scss */
+.theme-light .nivo-caption {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* line 81, ../sass/_light.scss */
+.theme-light .nivo-caption a {
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+}
+
+/* line 85, ../sass/_light.scss */
+.theme-light .nivo-caption a:hover {
+  color: #fff;
+}
+
+/* line 89, ../sass/_light.scss */
+.theme-light .nivo-controlNav.nivo-thumbs-enabled {
+  width: 80%;
+}
+
+/* line 92, ../sass/_light.scss */
+.theme-light .nivo-controlNav.nivo-thumbs-enabled a {
+  width: auto;
+  height: auto;
+  background: none;
+  margin-bottom: 5px;
+}
+
+/* line 98, ../sass/_light.scss */
+.theme-light .nivo-controlNav.nivo-thumbs-enabled img {
+  display: block;
+  width: 120px;
+  height: auto;
+}
+
+/* line 34, ../sass/app.scss */
 html {
   background: url(../img/park.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -2992,12 +3269,12 @@ html {
   background-size: cover;
 }
 
-/* line 37, ../sass/app.scss */
+/* line 40, ../sass/app.scss */
 header h2 {
   margin: 10px;
 }
 
-/* line 42, ../sass/app.scss */
+/* line 45, ../sass/app.scss */
 footer {
   background-color: #555;
   -moz-border-radius-bottomleft: 5px;
@@ -3009,73 +3286,73 @@ footer {
   min-height: 95px;
   padding: 10px;
 }
-/* line 47, ../sass/app.scss */
+/* line 50, ../sass/app.scss */
 footer h5 {
   color: white;
 }
 
-/* line 52, ../sass/app.scss */
+/* line 55, ../sass/app.scss */
 h1 {
   color: #FF6700;
   text-shadow: #333 0.05em 0.05em 0.1em;
 }
 
-/* line 57, ../sass/app.scss */
+/* line 60, ../sass/app.scss */
 h2 {
   color: #0F4FA8;
 }
 
-/* line 60, ../sass/app.scss */
+/* line 63, ../sass/app.scss */
 h3 {
   color: #4380D3;
 }
 
-/* line 63, ../sass/app.scss */
+/* line 66, ../sass/app.scss */
 strong {
   color: #4380D3;
 }
 
-/* line 67, ../sass/app.scss */
+/* line 70, ../sass/app.scss */
 a {
   color: #FF6700;
   font-weight: bold;
 }
-/* line 70, ../sass/app.scss */
+/* line 73, ../sass/app.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 75, ../sass/app.scss */
+/* line 78, ../sass/app.scss */
 nav {
   margin-bottom: 10px;
 }
-/* line 78, ../sass/app.scss */
+/* line 81, ../sass/app.scss */
 nav a:hover {
   text-decoration: none;
 }
 
-/* line 85, ../sass/app.scss */
+/* line 88, ../sass/app.scss */
 input[type=checkbox] {
   margin: 5px;
 }
 
-/* line 89, ../sass/app.scss */
+/* line 92, ../sass/app.scss */
 table {
   margin: 20px auto;
   width: 100%;
 }
 
-/* line 95, ../sass/app.scss */
+/* line 98, ../sass/app.scss */
 th, td, tr {
   border: 1px solid #4380D3;
 }
 
-/* line 99, ../sass/app.scss */
+/* line 102, ../sass/app.scss */
 td {
   text-align: center;
 }
 
-/* line 103, ../sass/app.scss */
+/* line 106, ../sass/app.scss */
 hr {
   border: 0;
   height: 1px;
@@ -3086,29 +3363,29 @@ hr {
   background-image: linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
 }
 
-/* line 109, ../sass/app.scss */
+/* line 112, ../sass/app.scss */
 .center {
   margin: 10px auto;
   display: block;
 }
 
-/* line 115, ../sass/app.scss */
+/* line 118, ../sass/app.scss */
 .top-bar-section ul li.active a {
   background: #0b3979;
 }
 
-/* line 119, ../sass/app.scss */
+/* line 122, ../sass/app.scss */
 .top-bar-section li a:not(.button):hover {
   background: #092e62;
 }
 
-/* line 124, ../sass/app.scss */
+/* line 127, ../sass/app.scss */
 .nivoSlider {
   position: relative;
   background: url(../img/loading.gif) no-repeat 50% 50%;
 }
 
-/* line 128, ../sass/app.scss */
+/* line 131, ../sass/app.scss */
 .nivoSlider img {
   position: absolute;
   top: 0px;
@@ -3116,25 +3393,25 @@ hr {
   display: none;
 }
 
-/* line 134, ../sass/app.scss */
+/* line 137, ../sass/app.scss */
 .nivoSlider a {
   border: 0;
   display: block;
 }
 
-/* line 138, ../sass/app.scss */
+/* line 141, ../sass/app.scss */
 .nivo-directionNav {
   margin-bottom: 30px;
 }
 
-/* line 142, ../sass/app.scss */
+/* line 145, ../sass/app.scss */
 .slider-wrapper {
   max-width: 450px;
   margin: 10px auto;
   display: block;
 }
 
-/* line 148, ../sass/app.scss */
+/* line 151, ../sass/app.scss */
 .map {
   border-style: solid;
   border-width: 1px;
@@ -3143,16 +3420,16 @@ hr {
   padding: 1.25em;
   background: #f2f2f2;
 }
-/* line 155, ../sass/app.scss */
+/* line 158, ../sass/app.scss */
 .map a h3:hover {
   text-decoration: underline;
 }
-/* line 158, ../sass/app.scss */
+/* line 161, ../sass/app.scss */
 .map img {
   margin: 10px auto;
   display: block;
 }
-/* line 161, ../sass/app.scss */
+/* line 164, ../sass/app.scss */
 .map img:hover {
   opacity: 0.8;
   -webkit-box-shadow: 0px 0px 5px #333333;
@@ -3160,48 +3437,48 @@ hr {
   box-shadow: 0px 0px 5px #333333;
 }
 
-/* line 168, ../sass/app.scss */
+/* line 171, ../sass/app.scss */
 .session {
   color: #4380D3;
   font-weight: bold;
 }
 
-/* line 174, ../sass/app.scss */
+/* line 177, ../sass/app.scss */
 .bingeltech p {
   margin-bottom: 0;
 }
-/* line 177, ../sass/app.scss */
+/* line 180, ../sass/app.scss */
 .bingeltech img {
   width: 106px;
   height: 35px;
 }
-/* line 181, ../sass/app.scss */
+/* line 184, ../sass/app.scss */
 .bingeltech img:hover {
   opacity: 0.4;
 }
 
-/* line 188, ../sass/app.scss */
+/* line 191, ../sass/app.scss */
 .sprite {
   height: 45px;
   padding: 0;
 }
-/* line 191, ../sass/app.scss */
+/* line 194, ../sass/app.scss */
 .sprite img {
   padding: 5px 0;
 }
 
-/* line 197, ../sass/app.scss */
+/* line 200, ../sass/app.scss */
 .events ul {
   margin-left: 1em;
   list-style: square;
 }
 
-/* line 204, ../sass/app.scss */
+/* line 207, ../sass/app.scss */
 .profile ul {
   margin-left: 1em;
   margin-bottom: .75em;
 }
-/* line 209, ../sass/app.scss */
+/* line 212, ../sass/app.scss */
 .profile img {
   width: 200px;
   height: 200px;
@@ -3209,51 +3486,51 @@ hr {
   margin-bottom: 30px;
 }
 
-/* line 217, ../sass/app.scss */
+/* line 220, ../sass/app.scss */
 .communitypic {
   box-shadow: 5px 5px 2px #888888;
 }
 
-/* line 222, ../sass/app.scss */
+/* line 225, ../sass/app.scss */
 .contact-info li {
   padding: 10px 40px;
   list-style: none;
   margin-top: 5px;
 }
-/* line 226, ../sass/app.scss */
+/* line 229, ../sass/app.scss */
 .contact-info li a {
   padding: 5px;
   text-decoration: none;
   color: #0F4FA8;
 }
 
-/* line 233, ../sass/app.scss */
+/* line 236, ../sass/app.scss */
 .contact-email {
   background: url(../img/envelope.gif) no-repeat left;
 }
 
-/* line 234, ../sass/app.scss */
+/* line 237, ../sass/app.scss */
 .contact-phone {
   background: url(../img/tel.gif) no-repeat left;
 }
 
-/* line 235, ../sass/app.scss */
+/* line 238, ../sass/app.scss */
 .contact-facebook {
   background: url(../img/facebook.gif) no-repeat left;
 }
 
-/* line 236, ../sass/app.scss */
+/* line 239, ../sass/app.scss */
 .contact-twitter {
   background: url(../img/twitter.gif) no-repeat left;
 }
 
-/* line 239, ../sass/app.scss */
+/* line 242, ../sass/app.scss */
 #wrapper {
   background-color: white;
 }
 
 @media only screen and (min-width: 48em) {
-  /* line 245, ../sass/app.scss */
+  /* line 248, ../sass/app.scss */
   #wrapper {
     max-width: 960px;
     margin: 60px auto;
@@ -3265,22 +3542,22 @@ hr {
   }
 }
 @media only screen and (max-width: 48em) {
-  /* line 254, ../sass/app.scss */
+  /* line 257, ../sass/app.scss */
   table tr th,
   table tr td {
     padding: 0.28em 0.31em;
   }
 
-  /* line 258, ../sass/app.scss */
+  /* line 261, ../sass/app.scss */
   .map {
     text-align: center;
   }
 
-  /* line 262, ../sass/app.scss */
+  /* line 265, ../sass/app.scss */
   .profile h2, .profile h3 {
     text-align: center;
   }
-  /* line 265, ../sass/app.scss */
+  /* line 268, ../sass/app.scss */
   .profile img {
     display: block;
     text-align: center;
