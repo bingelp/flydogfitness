@@ -30,6 +30,15 @@
 
 @import url(http://font.googleapis.com/css/css?family=Open+Sans:400italic,400,700);
 
+$color-highlight: #FF6700;
+$color-strong: #4380D3;
+$color-emphasis: #0F4FA8;
+$color-background: white;
+$color-shadow: #888888;
+$color-map-background: #F2F2F2;
+$color-text-shadow: #333;
+$color-footer: white;
+$color-map-border: #D9D9D9;
 
 html {
 	background: url(../img/park.jpg) no-repeat center center fixed;
@@ -38,37 +47,39 @@ html {
 
 header {
 	h2{
-		margin: 10px;
+		margin: emCalc(10px);
 	}
 }
 
 footer {
-	background-color: #555;
-	@include border-bottom-radius(5px);
-	min-height: 95px;
-	padding: 10px;
+	background-color: $primary-color;
+	min-height: emCalc(95px);
+	padding: (10px);
 	h5{
-		color:white;
+		color:$color-footer;
+	}
+	p {
+		color: $color-footer;
 	}
 }
 
 h1{
-	color: #FF6700;
-	text-shadow: #333 0.05em 0.05em 0.1em;
+	color: $color-highlight;
+	text-shadow: $color-text-shadow 0.05em 0.05em 0.1em;
 }
 
 h2{
-	color: #0F4FA8;
+	color: $color-emphasis;
 }
 h3{
-	color: #4380D3;
+	color: $color-strong;
 }
 strong{
-	color: #4380D3;
+	color: $color-strong;
 }
 
 a{
-	color: #FF6700;
+	color: $color-highlight;
 	font-weight: bold;
 	&:hover {
 		text-decoration: underline;
@@ -76,7 +87,7 @@ a{
 }
 
 nav {
-	margin-bottom: 10px;
+	margin-bottom: emCalc(10px);
 	a {
 		&:hover {
 			text-decoration:none;
@@ -86,17 +97,17 @@ nav {
 
 
 input[type=checkbox] {
-	margin: 5px;
+	margin: emCalc(5px);
 }
 
 table {
-	margin: 20px auto;
+	margin: emCalc(20px) auto;
 	width: 100%;
 }
 
 th, td, tr
 	{
-		border: 1px solid #4380D3;
+		border: emCalc(1px) solid $color-strong;
 	}
 
 td {
@@ -105,12 +116,12 @@ td {
 
 hr{
 	border: 0;
-	height: 1px;
+	height: emCalc(1px);
 	@include background-image(linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.4), rgba(0,0,0,0)));
 }
 
 .center {
-	margin: 10px auto;
+	margin: emCalc(10px) auto;
 	display:block;
 }
 
@@ -130,8 +141,8 @@ hr{
 }
 .nivoSlider img {
     position:absolute;
-    top:0px;
-    left:0px;
+    top:0;
+    left:0;
     display:none;
 }
 .nivoSlider a {
@@ -139,27 +150,27 @@ hr{
     display:block;
 }
 .nivo-directionNav{
-	margin-bottom: 30px;
+	margin-bottom: emCalc(30px);
 }
 
 .slider-wrapper {
-	max-width:450px;
-	margin: 10px auto;
+	max-width: emCalc(450px);
+	margin: emCalc(10px) auto;
 	display: block;
 }
 
 .map {
 	border-style: solid;
-  	border-width: 1px;
-  	border-color: #d9d9d9;
+  	border-width: emCalc(1px);
+  	border-color: $color-map-border;
   	margin-bottom: 1.25em;
   	padding: 1.25em;
-  	background: #f2f2f2;
+  	background: $color-map-background;
   	a h3:hover{
   		text-decoration:underline;
   	}
 	img {
-		margin: 10px auto;
+		margin: emCalc(10px) auto;
 		display: block;
 		&:hover{
 			opacity: 0.8;
@@ -169,7 +180,7 @@ hr{
 }
 
 .session {
-	color: #4380D3;
+	color: $color-strong;
 	font-weight:bold;
 }
 
@@ -179,8 +190,8 @@ hr{
 	}
 	img {
 		//vertical-align:middle;
-		width:106px;
-		height:35px;
+		width: 106px;
+		height: 35px;
 		&:hover{
 			opacity:0.4;
 		}
@@ -189,10 +200,10 @@ hr{
 
 
 .sprite {
-	height:45px;
+	height: 45px;
 	padding:0;
 	img{
-		padding: 5px 0;
+		padding: emCalc(5px) 0;
 	}
 }
 
@@ -212,24 +223,24 @@ hr{
 	img {
 	width: 200px;
 	height: 200px;
-	box-shadow: 5px 5px 2px #888888;	
-	margin-bottom: 30px;
+	box-shadow: emCalc(5px) emCalc(5px) emCalc(2px) $color-shadow;	
+	margin-bottom: emCalc(30px);
 	}
 }
 
 .communitypic{
-	box-shadow: 5px 5px 2px #888888;
+	box-shadow: emCalc(5px) emCalc(5px) emCalc(2px) $color-shadow;
 }
 
 //Contact Info
 .contact-info li {
-	padding:10px 40px;
+	padding: emCalc(10px) emCalc(40px);
 	list-style: none; 
-	margin-top: 5px;
+	margin-top: emCalc(5px);
 	a {
-		padding:5px;
+		padding: emCalc(5px);
 		text-decoration: none;
-		color: #0F4FA8;
+		color: $color-emphasis;
 	}
 }
 
@@ -240,15 +251,18 @@ hr{
 
 //Ids
 #wrapper {
-	background-color: white;
+	background-color: $color-background;
 }
 
 //Media Queries
 @media #{$small} {
 	#wrapper {
 		max-width: 960px;
-		margin: 60px auto;
+		margin: emCalc(60px) auto;
 		@include border-radius(5px);
+	}
+	footer{
+		@include border-bottom-radius(5px);
 	}
 }
 
@@ -268,7 +282,7 @@ hr{
 		img{
 			display:block;
 			text-align:center;
-			margin: 10px auto;
+			margin: emCalc(10px) auto;
 		}
 	}
 }
