@@ -4,27 +4,28 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
 <head>
-    <meta charset="utf-8">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Contact Us | Fly Dog Fitness</title>
-    <meta name="description" content="Fly Dog Fitness Trainers ">
-    <meta name="viewport" content="width=device-width">
+    <title>Pay Online | Fly Dog Fitness</title>
+    <meta name="description" content="Pay Online Fly Dog Fitness">
+	<meta name="keywords" content="Fly Dog, Fitness, Boot Camp, Bootcamp, Charleston,Downtown, Park Circle, FlyDog, Gym Alternative">
 	<link rel="stylesheet" href="../css/normalize.css" />
 	<link rel="stylesheet" href="../css/app.css" />
 	<script src="../js/vendor/custom.modernizr.js"></script>
 </head>
 <body>
-	<div id="wrapper" itemscope itemtype="http://schema.org/LocalBusiness">
+	<div id="wrapper">
 		<header class="row">
 			<div class="large-6 small-12 columns text-center">
-				<img itemprop="logo" src="../img/FlyDogLogoH_407x204.png" alt="Fly Dog Fitness Logo"></img>
+				<img src="../img/FlyDogLogoH_407x204.png" alt="Fly Dog Fitness Logo"></img>
 			</div>
 			<div class="large-6 small-12 columns">
 				<div class="row text-center">
 					<h2>Fitness Boot Camps & Personal Training in the Charleston Area</h2>
 				</div>
 				<div class="row" id="signup">
-					<p class="text-center hide-for-medium-up"><a href="../signup" class="medium button success">Sign Up Now</a></p>
+					<p class="text-center hide-for-medium-up"><a href="/signup" class="medium button success">Sign Up Now</a></p>
 				</div>
 			</div>
 		</header>
@@ -44,13 +45,13 @@
 					<li class="divider"></li>
 					<li><a href="../">Home</a></li>
 					<li class="divider"></li>
-					<li><a href="../#locdate">Location & Dates</a></li>
+					<li><a href="../#locdate">Locations & Dates</a></li>
 					<li class="divider"></li>
 					<li><a href="../trainers">Trainers</a></li>
 					<li class="divider"></li>
 					<li><a href="../community">Community</a></li>
 					<li class="divider"></li>
-					<li class="active"><a href="#">Contact Us</a></li>
+					<li><a href="../contact">Contact Us</a></li>
 					<li class="divider"></li>
 					<li class="has-form hide-for-small">
 						<a href="../signup" class="button success ">Sign Up Now</a>
@@ -72,47 +73,29 @@
 	          <li class="hide-for-small"><a href="http://www.twitter.com/teamflydog" target="_blank" class="sprite"><img src="../img/twitter.png" alt="@TeamFlyDog on Twitter"></img></a></li>
 	          <li class="divider hide-for-small"></li>
 	        </ul>
-	    	</section>
+	    </section>
 		</nav>
+		<div class="row">
+			<div class="small-12 large-6 columns">
+				<h1>Pay Online</h1>
+				<p>Payments can also be paid in person via cash, credit, or check.</p>
+				<h3>Select Boot Camp Package</h3>
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+			        <input name="cmd" type="hidden" value="_s-xclick">
+			        <input name="hosted_button_id" type="hidden" value="9R5JUU9468XCN">
+			        <input name="currency_code" type="hidden" value="USD">
 
-		<div class="row">
-			<div class="small-10 small-centered columns">
-				<div class="row">
-					<div class="small-12 large-6 columns">
-						<h1>Contact Fly Dog</h1>
-						<h3>Got a question for us?</br>Use the form below or feel free to email us or give us a call.</h3>
-						<form action="../webformmailer.php" method="post">
-							<input type="hidden" name="Subject" value="Submission from Contact Form" /> 
-							<input type="hidden" name="redirect" value="/contact/thankyou.html" />
-							<div>
-								<label for="name">Name:</label>
-								<input type="text" name="Name" id="name" placeholder="First Last" required="required" autofocus>
-								<label for="email">Email:</label>
-								<input type="email" name="Email" id="email" placeholder="name@example.com" required="required">
-								<label for="tel">Number:</label>
-								<input type="tel" name="Tel" id="tel" placeholder="843 555 5555">
-								<label for="textarea">Message:</label>
-								<textarea id="textarea" name="Message" rows="8" cols="45" required="required" placeholder="what's up?" ></textarea>
-								<input type="submit" value="Send Message" class="button medium" />
-							</div>
-						</form>
-					</div>
-					<div class="small-12 large-6 columns">
-						<img class="communitypic hide-for-small" src="../img/sunglasses.jpg" alt="operators standing by"/>
-						<ul class="contact-info">
-							<li class="contact-email">
-								<a href="mailto:team@flydogfitness.com?Subject=Question&Body=Hey%20Team%2C%0A%0A" target="_blank"><span itemprop="email">team@flydogfitness.com</span></a>
-							</li>
-							<li class="contact-phone"><a href="tel:8435133417"><span itemprop="telephone">(843) 513-3417</span></a></li>
-							<li class="contact-facebook"><a href="http://www.facebook.com/FlyDogFitnessBootcamp" target="_blank">FlyDogFitnessBootCamp</a></li>
-							<li class="contact-twitter"><a href="http://www.twitter.com/teamflydog" target="_blank">@TeamFlyDog</a></li>
-						</ul>
-					</div>
-				</div>
+			        <input name="on0" type="hidden" value="Select Package">
+			       	<input name="on0" type="hidden" value="Select Package">
+                    <select name="os0">
+	                    <option selected="selected" value="1-month unlimited">1-Month Unlimited $120.00 USD</option>
+	                    <option value="3-month unlimited">3-Month Unlimited $300.00 USD</option>
+                    </select>
+				   	<input type="submit" name="submit" class="button success" value="Pay Now"/>
+				   	<p>(You will be taken to the PayPal website to complete your transaction)</p>
+				</form>
+				<img src="https://www.paypalobjects.com/webstatic/mktg/logo/AM_SbyPP_mc_vs_dc_ae.jpg" />
 			</div>
-		</div>
-		<div class="row">
-			<p class="text-center hide-for-medium-up"><a href="#top" class="small button">Back to Top</a></p>
 		</div>
 		<footer class="row text-center">
 			<div class="small-12 large-4 columns">
@@ -145,7 +128,8 @@
 	  })();
 
 	</script>
-		<script type="text/javascript">
+
+	<script type="text/javascript">
 		$("a[href='#top']").click(function(){
 			$("#menu").addClass("expanded");
 			$("html, body").animate({scrollTop: $('#signup').offset().top-5}, "slow");

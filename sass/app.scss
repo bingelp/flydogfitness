@@ -100,6 +100,10 @@ input[type=checkbox] {
 	margin: emCalc(5px);
 }
 
+select{
+	margin: emCalc(10px) 0;
+}
+
 table {
 	margin: emCalc(20px) auto;
 	width: 100%;
@@ -119,6 +123,7 @@ hr{
 	height: emCalc(1px);
 	@include background-image(linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.4), rgba(0,0,0,0)));
 }
+
 
 .center {
 	margin: emCalc(10px) auto;
