@@ -19,6 +19,7 @@
 @import "foundation/components/inline-lists";
 @import "foundation/components/panels";
 @import "foundation/components/tables";
+@import "foundation/components/alert-boxes";
 
 @import "nivo-slider";
 @import "light";
@@ -28,7 +29,56 @@
 @import "compass/css3/background-size";
 @import "compass/css3/border-radius";
 
-@import url(http://font.googleapis.com/css/css?family=Open+Sans:400italic,400,700);
+//@import url(http://font.googleapis.com/css/css?family=Open+Sans:400italic,400,700);
+@font-face {
+	font-family: 'OpenSansBold';
+	src: url('https://s3-us-west-2.amazonaws.com/bingeltech/fonts/OpenSans-Bold.ttf');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('https://s3-us-west-2.amazonaws.com/bingeltech/fonts/OpenSans-Regular.ttf');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSansItalic';
+	src: url('https://s3-us-west-2.amazonaws.com/bingeltech/fonts/OpenSans-Italic.ttf');
+	font-weight: 400;
+	font-style: italic;
+}
+
+.o400 {
+	font-family: 'OpenSans', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.o400i {
+	font-family: 'OpenSansItalic', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+.o700 {
+	font-family: 'OpenSansBold', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+strong {
+	font-family: 'OpenSansBold', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+em {
+	font-family: 'OpenSansItalic', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
 
 $color-highlight: #FF6700;
 $color-strong: #4380D3;
@@ -41,8 +91,8 @@ $color-footer: white;
 $color-map-border: #D9D9D9;
 
 html {
-	background: url(../img/park.jpg) no-repeat center center fixed;
-	@include background-size(cover);
+	background: white;
+	background: url('https://s3-us-west-2.amazonaws.com/bingeltech/flydogfitness/park.jpg') no-repeat center center fixed;
 }
 
 header {
@@ -124,7 +174,23 @@ hr{
 	@include background-image(linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.4), rgba(0,0,0,0)));
 }
 
+.alert-box
+{
+	text-align: center;
+	.large{
+		font-size: $h4-font-size;
+	}
+	p{
+		margin-bottom: 0;
+	}
 
+} 
+
+.green{
+	background: $success-color;
+	color: $body-font-color;
+	border-color: darken($success-color, 5%);
+}
 .center {
 	margin: emCalc(10px) auto;
 	display:block;
@@ -290,6 +356,14 @@ hr{
 			margin: emCalc(10px) auto;
 		}
 	}
+}
+
+@media #{$medium}
+{
+	html {
+	background: url('https://s3-us-west-2.amazonaws.com/bingeltech/flydogfitness/park.jpg') no-repeat center center fixed;
+	@include background-size(cover);
+}
 }
 
 
