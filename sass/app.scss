@@ -20,6 +20,7 @@
 @import "foundation/components/panels";
 @import "foundation/components/tables";
 @import "foundation/components/alert-boxes";
+@import "foundation/components/pricing-tables";
 
 @import "nivo-slider";
 @import "light";
@@ -32,21 +33,21 @@
 //@import url(http://font.googleapis.com/css/css?family=Open+Sans:400italic,400,700);
 @font-face {
 	font-family: 'OpenSansBold';
-	src: url('https://s3-us-west-2.amazonaws.com/bingeltech/fonts/OpenSans-Bold.ttf');
+	src: url('http://d273hpf43uclu5.cloudfront.net/fonts/OpenSans-Bold.ttf');
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'OpenSans';
-	src: url('https://s3-us-west-2.amazonaws.com/bingeltech/fonts/OpenSans-Regular.ttf');
+	src: url('http://d273hpf43uclu5.cloudfront.net/fonts/OpenSans-Regular.ttf');
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'OpenSansItalic';
-	src: url('https://s3-us-west-2.amazonaws.com/bingeltech/fonts/OpenSans-Italic.ttf');
+	src: url('http://d273hpf43uclu5.cloudfront.net/fonts/OpenSans-Italic.ttf');
 	font-weight: 400;
 	font-style: italic;
 }
@@ -183,8 +184,21 @@ hr{
 	p{
 		margin-bottom: 0;
 	}
+	a{
+		color: white;
+	}
+
 
 } 
+
+.highlight-alert {
+	color: $alert-color;
+	padding-right: 0;
+}
+
+.no-left-pad{
+	padding-left: 0;
+}
 
 .green{
 	background: $success-color;
@@ -251,6 +265,11 @@ hr{
 }
 
 .session {
+	color: $color-strong;
+	font-weight:bold;
+}
+
+.highlight {
 	color: $color-strong;
 	font-weight:bold;
 }

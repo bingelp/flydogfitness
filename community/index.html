@@ -18,7 +18,7 @@
 	<div id="wrapper">
 		<header class="row">
 			<div class="large-6 small-12 columns text-center">
-				<img src="https://s3-us-west-2.amazonaws.com/bingeltech/flydogfitness/FlyDogLogoH_407x204.png" alt="Fly Dog Fitness Logo"></img>
+				<a href="../"><img src="https://s3-us-west-2.amazonaws.com/bingeltech/flydogfitness/FlyDogLogoH_407x204.png" alt="Fly Dog Fitness Logo" width="407" height="204"></img></a>
 			</div>
 			<div class="large-6 small-12 columns">
 				<div class="row text-center">
@@ -68,9 +68,9 @@
 	      <section class="top-bar-section">
 	        <ul class="left">
 	          <li class="divider hide-for-small"></li>
-	          <li class="hide-for-small"><a href="http://www.facebook.com/FlyDogFitnessBootCamp" target="_blank"class="sprite"><img src="../img/fb.png" alt="FlyDogFitnessBootCamp on Facebook"></img></a></li>
+	          <li class="hide-for-small"><a href="http://www.facebook.com/FlyDogFitnessBootCamp" target="_blank"class="sprite"><img src="../img/fb.png" alt="FlyDogFitnessBootCamp on Facebook" width="32" height="32" ></img></a></li>
 	          <li class="divider hide-for-small"></li>
-	          <li class="hide-for-small"><a href="http://www.twitter.com/teamflydog" target="_blank" class="sprite"><img src="../img/twitter.png" alt="@TeamFlyDog on Twitter"></img></a></li>
+	          <li class="hide-for-small"><a href="http://www.twitter.com/teamflydog" target="_blank" class="sprite"><img src="../img/twitter.png" alt="@TeamFlyDog on Twitter" width="32" height="32"></img></a></li>
 	          <li class="divider hide-for-small"></li>
 	        </ul>
 	    	</section>
@@ -85,7 +85,7 @@
 						<p>Regardless of whether we are competing in a major fitness event or just hanging out at our monthly social, Fly Dogs form a strong, supportive community.</p>
 					</div>
 					<div class="small-12 large-6 columns">
-						<img class="communitypic center" src="../img/flydog1.jpg" alt="Fly Dog Fitness Community"/>
+						<img class="communitypic center" src="../img/flydog1.jpg" alt="Fly Dog Fitness Community" width="350" height="233"/>
 					</div>
 				</div>
 				<hr>
@@ -104,7 +104,7 @@
 		</div>
 		<footer class="row text-center">
 			<div class="small-12 large-4 columns">
-				<a><img src="../img/FlyDog_112x60.png"></img></a>
+				<a><img src="../img/FlyDog_112x60.png" width="112" height="60"></img></a>
 			</div>
 			<div class="small-12 large-4 columns">
 				<h5>Copyright &copy; 2009-2013</h5>
@@ -113,7 +113,7 @@
 			</div>
 			<div class="small-12 large-4 columns bingeltech">
 				<p>Designed By</p>
-				<a href="http://bingeltech.com" target="_blank"><img src="../img/bingeltech.png"></img></a>
+				<a href="http://bingeltech.com" target="_blank"><img src="../img/bingeltech.png" width="106" height="35" ></img></a>
 			</div>
 		</footer>
 	</div><!--end of wrapper -->
@@ -158,7 +158,9 @@
 		{name:"iFive:K",link:"http://www.facebook.com/events/304391029687636/",date:{year:2013,month:4,day:18}},
 		{name:"USMC Ultimate Challege MudRun",link:"http://www.facebook.com/events/274047882726478/",date:{year:2013,month:4,day:27}},
 		{name:"Valerie Gaddy Memorial 5K Race/Walk",link:"http://www.facebook.com/events/485726421492035/",date:{year:2013,month:5,day:4}},
+		{name:"Start of 8-Week Challenge",link:"http://www.facebook.com/events/555289224517021/",date:{year:2013,month:6,day:3}},
 		{name:"New Primal Games 2013",link:"http://www.facebook.com/events/434960446578695/",date:{year:2013,month:6,day:22}},
+		{name:"Charleston Rainbow Run",link:"http://www.facebook.com/events/141016876081216/",date:{year:2013,month:6,day:23}},
 		{name:"Spartan Race - Carolinas Spartan Beast",link:"http://www.facebook.com/events/385501188214459/",date:{year:2013,month:11,day:9}}
 		]}
 		var recentEvents=document.getElementById("recentEvents");var upcomingEvents=document.getElementById("upcomingEvents");var outputOlder="<ul>";var outputUpcoming="<ul>";var currentTime=new Date;var month=currentTime.getMonth()+1;var day=currentTime.getDate();var year=currentTime.getFullYear();for(var i in data.events){var isOld=false;if(data.events[i].date.year<year){isOld=true}else if(data.events[i].date.year>year){}else{if(data.events[i].date.month<month){isOld=true}else if(data.events[i].date.month>month){}else{if(data.events[i].date.day<day){isOld=true}}}var temp="<li><strong>"+String("00" + data.events[i].date.month).slice(-2)+"/"+ String("00"+data.events[i].date.day).slice(-2)+"</strong> - <b>"+'</b> <a href="'+data.events[i].link+'">'+data.events[i].name+"</a></li>";if(isOld==true){outputOlder+=temp}else{outputUpcoming+=temp}}outputOlder+="</ul>";outputUpcoming+="</ul>";if(outputOlder!="<ul></ul>"){recentEvents.innerHTML=outputOlder}else{recentEvents.innerHTML="<em>No Recent Events</em>"}if(outputUpcoming!="<ul></ul>"){upcomingEvents.innerHTML=outputUpcoming}else{upcomingEvents.innerHTML="<em>No Upcoming Events</em>"}
