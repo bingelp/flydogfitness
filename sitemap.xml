@@ -30,28 +30,4 @@
 		<changefreq>Monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
-	<url>
-		<loc>http://flydogfitness.com/downtown/</loc>
-		<lastmod>2013-05-29</lastmod>
-		<changefreq>Monthly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://flydogfitness.com/park-circle/</loc>
-		<lastmod>2013-05-29</lastmod>
-		<changefreq>Monthly</changefreq>
-		<priority>0.5</priority>
-	</url>
-		<url>
-		<loc>http://downtown.flydogfitness.com/</loc>
-		<lastmod>2013-05-29</lastmod>
-		<changefreq>Monthly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>http://park-circle.flydogfitness.com/</loc>
-		<lastmod>2013-05-29</lastmod>
-		<changefreq>Monthly</changefreq>
-		<priority>0.5</priority>
-	</url>
 </urlset>
