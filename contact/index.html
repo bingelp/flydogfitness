@@ -11,13 +11,15 @@
     <meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="../css/normalize.css" />
 	<link rel="stylesheet" href="../css/app.css" />
-	<script src="../js/vendor/custom.modernizr.js"></script>
+	<!--[if lt IE 9]>
+	<script src="http://d273hpf43uclu5.cloudfront.net/flydogfitness/html5shiv.js"></script>
+	<![endif]-->
 </head>
 <body>
 	<div id="wrapper" itemscope itemtype="http://schema.org/LocalBusiness">
 		<header class="row">
 			<div class="large-6 small-12 columns text-center">
-				<a href="../"><img itemprop="logo" src="https://s3-us-west-2.amazonaws.com/bingeltech/flydogfitness/FlyDogLogoH_407x204.png" alt="Fly Dog Fitness Logo" width="407" height="204"></img></a>
+				<a href="../"><img itemprop="logo" src="http://d273hpf43uclu5.cloudfront.net/flydogfitness/FlyDogLogoH_407x204.png" alt="Fly Dog Fitness Logo" width="407" height="204"></img></a>
 			</div>
 			<div class="large-6 small-12 columns">
 				<div class="row text-center">
@@ -41,12 +43,14 @@
 			<section class="top-bar-section">
 				<!-- Right Nav Section -->
 				<ul class="right">
-					<li class="divider"></li>
-					<li><a href="../">Home</a></li>
+					<li class="divider  hide-for-medium-up"></li>
+					<li><a class="hide-for-medium-up" href="../">Home</a></li>
 					<li class="divider"></li>
 					<li><a href="../#locdate">Location & Dates</a></li>
 					<li class="divider"></li>
 					<li><a href="../trainers">Trainers</a></li>
+					<li class="divider"></li>
+					<li><a href="../rates">Rates</a></li>
 					<li class="divider"></li>
 					<li><a href="../community">Community</a></li>
 					<li class="divider"></li>
@@ -67,9 +71,9 @@
 	      <section class="top-bar-section">
 	        <ul class="left">
 	          <li class="divider hide-for-small"></li>
-	          <li class="hide-for-small"><a href="http://www.facebook.com/FlyDogFitnessBootCamp" target="_blank"class="sprite"><img src="../img/fb.png" alt="FlyDogFitnessBootCamp on Facebook" width="32" height="32" ></img></a></li>
+	          <li class="hide-for-small"><a href="http://www.facebook.com/FlyDogFitnessBootCamp" target="_blank"class="sprite"><img src="http://d273hpf43uclu5.cloudfront.net/flydogfitness/fb.png" alt="FlyDogFitnessBootCamp on Facebook" width="32" height="32" ></img></a></li>
 	          <li class="divider hide-for-small"></li>
-	          <li class="hide-for-small"><a href="http://www.twitter.com/teamflydog" target="_blank" class="sprite"><img src="../img/twitter.png" alt="@TeamFlyDog on Twitter" width="32" height="32" ></img></a></li>
+	          <li class="hide-for-small"><a href="http://www.twitter.com/teamflydog" target="_blank" class="sprite"><img src="http://d273hpf43uclu5.cloudfront.net/flydogfitness/twitter.png" alt="@TeamFlyDog on Twitter" width="32" height="32" ></img></a></li>
 	          <li class="divider hide-for-small"></li>
 	        </ul>
 	    	</section>
@@ -98,7 +102,7 @@
 						</form>
 					</div>
 					<div class="small-12 large-6 columns">
-						<img class="communitypic hide-for-small" src="../img/sunglasses.jpg" alt="operators standing by" width="250" height="252"/>
+						<img class="communitypic hide-for-small" src="http://d273hpf43uclu5.cloudfront.net/flydogfitness/sunglasses.jpg" alt="operators standing by" width="250" height="252"/>
 						<ul class="contact-info">
 							<li class="contact-email">
 								<a href="mailto:team@flydogfitness.com?Subject=Question&Body=Hey%20Team%2C%0A%0A" target="_blank"><span itemprop="email">team@flydogfitness.com</span></a>
@@ -116,7 +120,7 @@
 		</div>
 		<footer class="row text-center">
 			<div class="small-12 large-4 columns">
-				<a><img src="../img/FlyDog_112x60.png" width="112" height="60"></img></a>
+				<a><img src="http://d273hpf43uclu5.cloudfront.net/flydogfitness/FlyDog_112x60.png" width="112" height="60"></img></a>
 			</div>
 			<div class="small-12 large-4 columns">
 				<h5>Copyright &copy; 2009-2013</h5>
@@ -125,7 +129,7 @@
 			</div>
 			<div class="small-12 large-4 columns bingeltech">
 				<p>Designed By</p>
-				<a href="http://bingeltech.com" target="_blank"><img src="../img/bingeltech.png" width="106" height="35"></img></a>
+				<a href="http://bingeltech.com" target="_blank"><img src="http://d273hpf43uclu5.cloudfront.net/flydogfitness/bingeltech.png" width="106" height="35"></img></a>
 			</div>
 		</footer>
 	</div><!--end of wrapper -->
@@ -152,8 +156,8 @@
 		});
 	</script>
 
-	<script src="../js/foundation/foundation.js"></script>
-	<script src="../js/foundation/foundation.topbar.js"></script>
+	<script src="../js/foundation/foundation-ck.js"></script>
+	<script src="../js/foundation/foundation.topbar-ck.js"></script>
 
 
 	<script>

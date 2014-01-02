@@ -93,7 +93,7 @@ $color-map-border: #D9D9D9;
 
 html {
 	background: white;
-	background: url('https://s3-us-west-2.amazonaws.com/bingeltech/flydogfitness/park.jpg') no-repeat center center fixed;
+	background: url('http://d273hpf43uclu5.cloudfront.net/flydogfitness/park.jpg') no-repeat center center fixed;
 }
 
 header {
@@ -187,7 +187,9 @@ hr{
 	a{
 		color: white;
 	}
-
+	h4{
+		color: white;
+	}
 
 } 
 
@@ -334,10 +336,10 @@ hr{
 	}
 }
 
-.contact-email{background: url(../img/envelope.gif) no-repeat left;}
-.contact-phone {background:url(../img/tel.gif) no-repeat left;}
-.contact-facebook {background: url(../img/facebook.gif) no-repeat left;}
-.contact-twitter {background:url(../img/twitter.gif) no-repeat left;}
+.contact-email{background: url(http://d273hpf43uclu5.cloudfront.net/flydogfitness/envelope.gif) no-repeat left;}
+.contact-phone {background:url(http://d273hpf43uclu5.cloudfront.net/flydogfitness/tel.gif) no-repeat left;}
+.contact-facebook {background: url(http://d273hpf43uclu5.cloudfront.net/flydogfitness/facebook.gif) no-repeat left;}
+.contact-twitter {background:url(http://d273hpf43uclu5.cloudfront.net/flydogfitness/twitter.gif) no-repeat left;}
 
 //Ids
 #wrapper {
@@ -380,7 +382,7 @@ hr{
 @media #{$medium}
 {
 	html {
-	background: url('https://s3-us-west-2.amazonaws.com/bingeltech/flydogfitness/park.jpg') no-repeat center center fixed;
+	background: url('http://d273hpf43uclu5.cloudfront.net/flydogfitness/park.jpg') no-repeat center center fixed;
 	@include background-size(cover);
 }
 }
