@@ -266,6 +266,16 @@ hr{
 	}
 }
 
+.corporate {
+	img {
+		display: block;
+		&:hover{
+			opacity: 0.8;
+			@include single-box-shadow; 
+		}
+	}
+}
+
 .session {
 	color: $color-strong;
 	font-weight:bold;

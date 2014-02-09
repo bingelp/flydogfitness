@@ -7,10 +7,26 @@
  Site: bingeltech.com, pete@bingeltech.com
  Location: Charleston, SC
 
-# THANKS
-
-
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    jQuery, Modernizr
+    HTML5 - compiled from Kit (http://incident57.com/codekit/kit.php
+    CSS3 - compiled from SASS (http://sass-lang.com) uses Compass (http://compass-style.org/) mixins
+    JavaScript - minified with CodeKit (http://incident57.com/codekit/)
+
+    JavaScript Library: jQuery
+    Image Slider: Nivo Slider (http://dev7studios.com/plugins/nivo-slider)
+    Front-End Framework: Zurb Foundation 4 (http://foundation.zurb.com/)
+
+    Sources Compiled using CodeKit (http://incident57.com/codekit/)
+    Code written using Sublime Text 3 (http://www.sublimetext.com/3)
+    CDN: AWS CloudFront (http://aws.amazon.com/cloudfront/)
+
+    Metadata:
+    Open Graph Protocol (http://ogp.me/)
+    HTML Microdata (http://www.w3.org/TR/microdata/)
+
+    More Details: http://builtwith.com/flydogfitness.com
+
+
+
+
